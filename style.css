@@ -1,3 +1,27 @@
-h1{
-  color: blue;
+.bgImgCenter{
+    color: white;
+    background-image: url('medias/front_home2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10%;
+}
+
+#img1{
+  width: 45%;
+}
+
+#img2{
+  width: 45%;
+}
+
+#img3{
+  width: 45%;
+}
+
+.r4w{
+  text-align: center;
+}
+
+p li{
+  font-family: Lato;
 }
