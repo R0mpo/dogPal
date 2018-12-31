@@ -36,19 +36,25 @@ html, body {
 
 #argumentVente {
   height: 410px;
-  padding-top: 70px;
+  padding-top: 30px;
   font: Lato;
 }
 
+#containerBlanc{
+  background-color: white;
+  height: 450px;
+}
 #avis {
-  height: 500px;
-  padding-top: 70px;
+  height: 450px;
+  padding-top: 30px;
 }
 
 #piedPage{
   height: 450px;
   padding-top: 80px;
   font: Lato;
+  text-align: left;
+  padding-left: 50px;
 }
 
 #piedPageGauche{
@@ -59,10 +65,10 @@ html, body {
   top: -90px;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 95%;
   background: url('medias/front_home.jpg');
   display: table;
-  background-size: contain;
+  background-size: cover;
 }
 
 .wrapper .inner {
@@ -201,7 +207,29 @@ h2::after {
   border: 5px double;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 722px) {
+  #argumentVente {
+    height: 1000px;
+    padding-top: 70px;
+    font: Lato;
+  }
+
+  #avis {
+    height: 100%;
+    padding-top: 10px;
+  }
+
+  #piedPage{
+    height: 100%;
+    padding-top: 80px;
+    font: Lato;
+  }
+
+  #piedPageGauche{
+    padding-top: 1px;
+    padding-bottom: 15px;
+  }
+
   .my-carousel {
     position: relative;
     top: 0px;
@@ -229,3 +257,4 @@ h2::after {
     background-color: white;
     color: white;
   }
+}
