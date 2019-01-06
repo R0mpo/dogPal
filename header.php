@@ -16,7 +16,7 @@
 
 <body>
   <!-- Barre de menus et navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light menuBarre">
     <a class="navbar-brand" href="#">DogPal</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,9 +39,9 @@
       <?php
         if (isset($_SESSION["loggedin"])){
           $usuName = htmlspecialchars($_SESSION["username"]);
-          echo '<div>Bonjour '.$usuName.'<form action="logout.php" method="post">
+          echo '<span id="uneLigne">Bonjour '.$usuName.'<form action="logout.php" method="post"  id="decoBoutton">
               <button type="submit" name="logout-submit">Logout</button>
-            </form></div>';
+            </form></span>';
 
         }else {
           echo '<a href="login.php">Connexion</a> ou <a href="register.php">Inscription</a>';

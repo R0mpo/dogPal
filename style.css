@@ -256,3 +256,20 @@ h2::after {
     color: white;
   }
 }
+
+#uneLigne{
+  display: inline-block;
+  float: left;
+}
+
+#decoBoutton{
+  align-content: center;
+  float: right;
+  padding-left: 15px;
+}
+
+.carousel-inner > .carousel-item > img{ 
+  max-width:100%; 
+  height:350px;
+  align-content: center;
+}

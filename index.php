@@ -155,23 +155,10 @@ session_start();
     </div>
   </div>
 
-  <!-- Footer avec liens de navigation Pied de Page -->
-  <footer>
-    <div class="container centered">
-      <div class="row" id="piedPage">
-        <div class="col-md-6" id="piedPageGauche">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Acceuil</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="prix.html">Tarifs</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/I11bPV4pgEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <!-- Footer avec liens de navigation Pied de Page-->
+  <?php
+    require "footer.php";
+   ?>
 
   <!-- Bootstrap : jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
