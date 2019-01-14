@@ -99,10 +99,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta charset="UTF-8">
     <title>Sign Up</title>
     <script src="https://code.jquery.com/jquery-1.7.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style type="text/css">
      
-       <style>
+    <style>
             body {
     background-color: rgb(195, 204, 204);
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans serif;
@@ -253,7 +253,7 @@ button:active {
 #pswd_info {
     display:none;
 }
-        </style>
+</style>
 </head>
 <body>
     <div id="container">
@@ -280,10 +280,9 @@ button:active {
                 <input type="submit" class="btn btn-primary" value="Submit">
                 <input type="reset" class="btn btn-default" value="Reset">
        </li>
-    
-            
              </ul>
         </form>
+        
         <div id="pswd_info">
                     <h4>Password must meet the following requirements:</h4>
                     <ul>

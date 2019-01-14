@@ -43,9 +43,19 @@ session_start();
             <li>Chien déposé chez vous</li>
             <li>Satisfait ou remboursé</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary">C'est partit !</button>
+         
+        <?php  
+        if (isset($_SESSION["loggedin"])){
+          $usuName = htmlspecialchars($_SESSION["username"]);
+          echo '<a href="tbd.php" class="btn btn-lg btn-block btn-outline-primary" role="button">Poster une annonce</a>';
+
+        }else {
+          echo '<a href="register.php" class="btn btn-lg btn-block btn-outline-primary" role="button">S\'inscrire</a>';
+        }
+        ?> 
         </div>
       </div>
+
       <div class="card mb-4 box-shadow">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">Pro</h4>
@@ -58,7 +68,15 @@ session_start();
             <li>Chien déposé chez vous</li>
             <li>Satisfait ou remboursé</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Je me lance !</button>
+                  <?php  
+        if (isset($_SESSION["loggedin"])){
+          $usuName = htmlspecialchars($_SESSION["username"]);
+          echo '<a href="tbd.php" class="btn btn-lg btn-block btn-primary" role="button">Poster une annonce</a>';
+
+        }else {
+          echo '<a href="register.php" class="btn btn-lg btn-block btn-primary" role="button">S\'inscrire</a>';
+        }
+        ?> 
         </div>
       </div>
       <div class="card mb-4 box-shadow">
@@ -73,7 +91,15 @@ session_start();
             <li>Chien déposé chez vous</li>
             <li>Satisfait ou remboursé</li>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">Je me lance !</button>
+        <?php  
+        if (isset($_SESSION["loggedin"])){
+          $usuName = htmlspecialchars($_SESSION["username"]);
+          echo '<a href="tbd.php" class="btn btn-lg btn-block btn-primary" role="button">Poster une annonce</a>';
+
+        }else {
+          echo '<a href="register.php" class="btn btn-lg btn-block btn-primary" role="button">S\'inscrire</a>';
+        }
+        ?> 
         </div>
       </div>
     </div>

@@ -28,7 +28,14 @@ session_start();
     <div class="inner">
       <div class="content">
         <h2 class="wow fadeInDown" data-wow-delay="1s">Votre meilleur partenaire promenades !</h2>
-        <a href="register.php" class="btn btn-primary" role="button">Je m'inscrit</a>
+                <?php  
+        if (isset($_SESSION["loggedin"])){
+          $usuName = htmlspecialchars($_SESSION["username"]);
+          echo '<a href="tbd.php" class="btn btn-primary" role="button">Poster une annonce</a>';
+        }else {
+          echo '<a href="register.php" class="btn btn-primary" role="button">S\'inscrire</a>';
+        }
+        ?> 
       </div>
     </div>
   </div>
@@ -40,8 +47,15 @@ session_start();
         <div class="thumbnail"><img src="medias/dog.png" alt="Thumbnail Image 1">
           <div class="caption">
             <h3>Partenaire Confiance</h3>
-            <p>Confiez votre animal de compagnie aux meilleurs des promeneurs de votre ville. Tous nos premeneurs sont sont responsable de vos amis les animaux et nous nous engageons à vous fournir la meilleur prestation immaginable.</p>
-            <p><a href="register.php" class="btn btn-primary" role="button">Je test</a></p>
+            <p>Confiez votre animal de compagnie aux meilleurs des promeneurs de votre ville. Tous nos premeneurs sont responsables de vos amis les animaux et nous nous engageons à vous fournir la meilleure prestation imaginable.</p>
+            <p><?php if (isset($_SESSION["loggedin"])){
+          $usuName = htmlspecialchars($_SESSION["username"]);
+          echo '<a href="tbd.php" class="btn btn-primary" role="button">Poster une annonce</a>';
+
+        }else {
+          echo '<a href="register.php" class="btn btn-primary" role="button">S\'inscrire</a>';
+        }
+        ?></p>
           </div>
         </div>
       </div>
@@ -49,8 +63,15 @@ session_start();
         <div class="thumbnail"><img src="medias/bone.png" alt="Thumbnail Image 1">
           <div class="caption">
             <h3>Equipe Professionelle</h3>
-            <p>Une équipe de professionnels habitués vous garantissent un service de qualité. Nos promeneurs sont des habitués du métier et cela fait longtemps que nous travaillons en partenariat avec eux.</p>
-            <p><a href="register.php" class="btn btn-primary" role="button">Je test</a></p>
+            <p>Une équipe de professionnels habitués vous garantit un service de qualité. Nos promeneurs sont des habitués du métier et cela fait longtemps que nous travaillons en partenariat avec eux.</p>
+            <?php if (isset($_SESSION["loggedin"])){
+          $usuName = htmlspecialchars($_SESSION["username"]);
+          echo '<a href="tbd.php" class="btn btn-primary" role="button">Poster une annonce</a>';
+
+        }else {
+          echo '<a href="register.php" class="btn btn-primary" role="button">S\'inscrire</a>';
+        }
+        ?>
           </div>
         </div>
       </div>
@@ -59,7 +80,14 @@ session_start();
           <div class="caption">
             <h3>Assurance Bonheur</h3>
             <p>Retrouvez votre chien plus heureux que jamais. Il vous retrouvera souriant, après avoir pu dépenser toute son énergie en compagnie d'autres chiens de sa taille. Dogpal est votre partenaire promenades.</p>
-            <p><a href="register.php" class="btn btn-primary" role="button">Je test</a></p>
+            <?php if (isset($_SESSION["loggedin"])){
+          $usuName = htmlspecialchars($_SESSION["username"]);
+          echo '<a href="tbd.php" class="btn btn-primary" role="button">Poster une annonce</a>';
+
+        }else {
+          echo '<a href="register.php" class="btn btn-primary" role="button">S\'inscrire</a>';
+        }
+        ?>
           </div>
         </div>
       </div>
@@ -125,7 +153,7 @@ session_start();
                       </div>
                       <div class="media-body">
                         <div class="testimonial">
-                          <p>Chimney est plus heureuse que jamais. Et moi, je n'ai plus besoin de me forcer lorsque je n'ai pas l'envie ou le temps de faire une grnade promenade.</p>
+                          <p>Chimney est plus heureuse que jamais. Et moi, je n'ai plus besoin de me forcer lorsque je n'ai pas l'envie ou le temps de faire une grande promenade.</p>
                           <p class="overview"><b>Jessica Malton</b>, maîtresse de Chimney</p>
                         </div>
                       </div>
@@ -140,7 +168,7 @@ session_start();
                       </div>
                       <div class="media-body">
                         <div class="testimonial">
-                          <p>J'adore dogpal. Merci pour toutes ces journées de bonheur passées à promener des chiens adorables. Je retravaillerais pour vous.</p>
+                          <p>J'adore dogpal. Merci pour toutes ces journées de bonheur passées à promener des chiens adorables. Je retravaillerai pour vous.</p>
                           <p class="overview"><b>Mary Saveley</b>, mâitresse de Mickel</p>
                         </div>
                       </div>

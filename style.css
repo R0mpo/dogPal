@@ -35,14 +35,14 @@ html, body {
 }
 
 #argumentVente {
-  height: 410px;
+  height: auto;
   padding-top: 30px;
   font: Lato;
 }
 
 #containerBlanc{
   background-color: white;
-  height: 450px;
+  height: auto;
 }
 #avis {
   height: 450px;
