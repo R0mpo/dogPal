@@ -208,7 +208,6 @@ h2::after {
 @media only screen and (max-width: 722px) {
   #argumentVente {
     height: 1000px;
-    padding-top: 70px;
     font: Lato;
   }
 
