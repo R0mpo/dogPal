@@ -35,30 +35,30 @@ session_start();
     <input type="radio" name="x" value="promeneur">
     <label for="promeneur">Promener des chiens</label>
     <input type="radio" name="x" value="besoinPromeneur" checked >
-    <label for="besoinPromeneur">Faire promener mon chien</label>
+    <label for="besoinPromeneur">Faire promener mon chien</label><br>
 
 
     <label for="FirstName">Prénom :</label>
-    <input type="text" class="form-control" name="prenom" placeholder="John" required>
+    <input type="text" class="form-control mb-3" name="prenom" placeholder="John" required>
 
 
     <label for="Name">Nom de famille :</label>
-    <input type="text" class="form-control" name="nom" placeholder="Doe" required>
+    <input type="text" class="form-control mb-3" name="nom" placeholder="Doe" required>
 
 
     <label for="Email">Adresse email :</label>
-    <input type="email" class="form-control" name="email" placeholder="john.doe@g2r.fr" required>
+    <input type="email" class="form-control mb-3" name="email" placeholder="john.doe@g2r.fr" required>
 
 
     <label for="Phone">Numéro de téléphone :</label>
-    <input type="text" class="form-control" name="your_phone" placeholder="+33 6 89 89 89 89" required>
+    <input type="text" class="form-control mb-3" name="your_phone" placeholder="+33 6 89 89 89 89" required>
 
 
     <label for="mission_text">Description de la mission :</label>
-    <textarea name="mission_text" class="form-control" rows="3" cols="28" rows="5" placeholder="Décrivez ici la mission souhaitée"></textarea> 
+    <textarea name="mission_text" class="form-control mb-3" rows="3" cols="28" rows="5" placeholder="Décrivez ici la mission souhaitée"></textarea> 
 
     
-    <button type="submit" class="btn btn-primary" name="insert" value="Submit" id="submit_form">Submit</button>
+    <button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">Submit</button>
     </form>
 
     <?php
@@ -75,14 +75,15 @@ session_start();
 
             $result = mysqli_query($link,$query);
 
-            if($result)
-                {
-                    echo 'Merci, nous allons revenir vers vous';
+            if(isset($_POST['submit'])){
+                echo '<p class="vert">Merci, nous allons revenir vers vous</p>';
+            }else if($result) {
+                echo '<p class="">Merci de remplir le formulaire</p>';
+            }
+                else {
+                    echo '<p class="rouge">Something went wrong</p>';
                 }
-                
-                else{
-                    echo 'Something went wrong';
-                }
+
                 
                 mysqli_free_result($result);
                 mysqli_close($link);

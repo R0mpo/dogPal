@@ -47,7 +47,7 @@ session_start();
         <?php  
         if (isset($_SESSION["loggedin"])){
           $usuName = htmlspecialchars($_SESSION["username"]);
-          echo '<a href="tbd.php" class="btn btn-lg btn-block btn-outline-primary" role="button">Poster une annonce</a>';
+          echo '<a href="createMission.php" class="btn btn-lg btn-block btn-outline-primary" role="button">Poster une annonce</a>';
 
         }else {
           echo '<a href="register.php" class="btn btn-lg btn-block btn-outline-primary" role="button">S\'inscrire</a>';
@@ -71,7 +71,7 @@ session_start();
                   <?php  
         if (isset($_SESSION["loggedin"])){
           $usuName = htmlspecialchars($_SESSION["username"]);
-          echo '<a href="tbd.php" class="btn btn-lg btn-block btn-primary" role="button">Poster une annonce</a>';
+          echo '<a href="createMission.php" class="btn btn-lg btn-block btn-primary" role="button">Poster une annonce</a>';
 
         }else {
           echo '<a href="register.php" class="btn btn-lg btn-block btn-primary" role="button">S\'inscrire</a>';
@@ -94,7 +94,7 @@ session_start();
         <?php  
         if (isset($_SESSION["loggedin"])){
           $usuName = htmlspecialchars($_SESSION["username"]);
-          echo '<a href="tbd.php" class="btn btn-lg btn-block btn-primary" role="button">Poster une annonce</a>';
+          echo '<a href="createMission.php" class="btn btn-lg btn-block btn-primary" role="button">Poster une annonce</a>';
 
         }else {
           echo '<a href="register.php" class="btn btn-lg btn-block btn-primary" role="button">S\'inscrire</a>';
