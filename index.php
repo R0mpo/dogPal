@@ -31,7 +31,7 @@ session_start();
                 <?php  
         if (isset($_SESSION["loggedin"])){
           $usuName = htmlspecialchars($_SESSION["username"]);
-          echo '<a href="tbd.php" class="btn btn-primary" role="button">Poster une annonce</a>';
+          echo '<a href="createMission.php" class="btn btn-primary" role="button">Poster une annonce</a>';
         }else {
           echo '<a href="register.php" class="btn btn-primary" role="button">S\'inscrire</a>';
         }
@@ -50,7 +50,7 @@ session_start();
             <p>Confiez votre animal de compagnie aux meilleurs des promeneurs de votre ville. Tous nos premeneurs sont responsables de vos amis les animaux et nous nous engageons à vous fournir la meilleure prestation imaginable.</p>
             <p><?php if (isset($_SESSION["loggedin"])){
           $usuName = htmlspecialchars($_SESSION["username"]);
-          echo '<a href="tbd.php" class="btn btn-primary" role="button">Poster une annonce</a>';
+          echo '<a href="createMission.php" class="btn btn-primary" role="button">Poster une annonce</a>';
 
         }else {
           echo '<a href="register.php" class="btn btn-primary" role="button">S\'inscrire</a>';
@@ -66,7 +66,7 @@ session_start();
             <p>Une équipe de professionnels habitués vous garantit un service de qualité. Nos promeneurs sont des habitués du métier et cela fait longtemps que nous travaillons en partenariat avec eux.</p>
             <?php if (isset($_SESSION["loggedin"])){
           $usuName = htmlspecialchars($_SESSION["username"]);
-          echo '<a href="tbd.php" class="btn btn-primary" role="button">Poster une annonce</a>';
+          echo '<a href="createMission.php" class="btn btn-primary" role="button">Poster une annonce</a>';
 
         }else {
           echo '<a href="register.php" class="btn btn-primary" role="button">S\'inscrire</a>';
@@ -82,7 +82,7 @@ session_start();
             <p>Retrouvez votre chien plus heureux que jamais. Il vous retrouvera souriant, après avoir pu dépenser toute son énergie en compagnie d'autres chiens de sa taille. Dogpal est votre partenaire promenades.</p>
             <?php if (isset($_SESSION["loggedin"])){
           $usuName = htmlspecialchars($_SESSION["username"]);
-          echo '<a href="tbd.php" class="btn btn-primary" role="button">Poster une annonce</a>';
+          echo '<a href="createMission.php" class="btn btn-primary" role="button">Poster une annonce</a>';
 
         }else {
           echo '<a href="register.php" class="btn btn-primary" role="button">S\'inscrire</a>';
