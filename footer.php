@@ -1,13 +1,12 @@
   <!-- Footer avec liens de navigation Pied de Page -->
   <footer>
-    <div class="container centered">
-      <div class="row" id="piedPage">
+    <div class="container centered mt-3">
+      <div class="row mt-4" id="piedPage">
         <div class="col-md-6" id="piedPageGauche">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Acceuil</a></li>
-            <li><a href="team.html">Team</a></li>
             <li><a href="prix.html">Tarifs</a></li>
-            <li><a href="prix.html">Contactez-nous</a></li>
+            <li><a href="https://medium.com/search?q=dog%20walking" target="_blank">Blog</a></li>
           </ul>
         </div>
         

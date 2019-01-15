@@ -27,10 +27,10 @@
           <a class="nav-link" href="index.php">Accueil<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="team.php">Team</a>
+          <a class="nav-link" href="prix.php">Tarifs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="prix.php">Tarifs</a>
+          <a class="nav-link" href="https://medium.com/search?q=dog%20walking" target="_blank">Blog</a>
         </li>
       </ul>
     </div>

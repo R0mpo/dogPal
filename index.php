@@ -42,7 +42,7 @@ session_start();
 
   <!-- Trois blocs horizontaux avec trois arguments de vente -->
   <div class="container" id="argumentVente">
-    <div class="row centered">
+    <div class="row centered mt-3 mb-3">
       <div class="col-md-4 wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
         <div class="thumbnail"><img src="medias/dog.png" alt="Thumbnail Image 1">
           <div class="caption">
@@ -95,8 +95,8 @@ session_start();
   </div>
 
   <!-- Partie avec les commentaires des utilisateurs -->
-  <div class="container-fluid" id="containerBlanc">
-    <div class="container lowLight" id="avis">
+  <div class="container-fluid mt-3 mb-3" id="containerBlanc">
+    <div class="container lowLight mt-3 mb-3" id="avis">
       <div class="row">
         <div class="col-md-12">
           <h2 id="testiTitle">Ce que nos <b>clients</b> en disent :</h2>
