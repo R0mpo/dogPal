@@ -85,7 +85,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
             if(isset($_POST['submit'])){
                 echo 'Redirection en cours';
-                echo '<meta http-equiv="refresh" content="1 ; url=http://localhost/projectMaster/missionCreated.php">';
+                echo '<meta http-equiv="refresh" content="1 ; url=missionCreated.php">';
 
                 // header('refresh:5, url=missionCreated.php');
             }else if($result) {
