@@ -23,15 +23,15 @@ session_start();
     require "header.php";
     ?>
 
-    <div class="container mt-4 pt-3">
+    <div class="container pb-4">
     <div class="row centered">
     
     <div class="col">
-    <h2><img src="medias/flag.png" width="80px">Remplissez ce formulaire pour commencer !</h2><br>
+    <h2><img src="medias/flag.png" width="50px">Remplissez ce formulaire pour commencer !</h2><br>
 
     <form name="mission-form" action="createMission.php" method="post">
 
-    <label for="FirstName">Quel est votre besoin ?</label><br>
+    <label for="FirstName">Vous avez besoin de :</label>
     <input type="radio" name="x" value="promeneur">
     <label for="promeneur">Promener des chiens</label>
     <input type="radio" name="x" value="besoinPromeneur" checked >
@@ -57,8 +57,10 @@ session_start();
     <label for="mission_text">Description de la mission :</label>
     <textarea name="mission_text" class="form-control mb-3" rows="3" cols="28" rows="5" placeholder="Décrivez ici la mission souhaitée"></textarea> 
 
+    <label for="dogoo">Nom de votre chien :</label>
+    <input type="text" class="form-control mb-3" name="doggo" placeholder="Orion" required>
     
-    <button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">Submit</button>
+    <button type="submit" class="btn btn-primary" name="submit" value="submit" id="submit_form">Submit</button>
     </form>
 
     <?php
@@ -70,13 +72,17 @@ session_start();
             $email = $_POST['email'];
             $tel = $_POST['your_phone'];
             $annonce = $_POST['mission_text'];
+            $doggo = $_POST['doggo'];
 
-            $query = "INSERT INTO `mission`(`type`, `prenom`, `nom`, `email`, `telephone`, `annonce`) VALUES ('$type','$fname','$lname','$email','$tel', '$annonce')";
+            $query = "INSERT INTO `mission`(`type`, `prenom`, `nom`, `email`, `telephone`, `annonce`, `doggo`) VALUES ('$type','$fname','$lname','$email','$tel', '$annonce', '$doggo')";
 
             $result = mysqli_query($link,$query);
 
             if(isset($_POST['submit'])){
-                echo '<p class="vert">Merci, nous allons revenir vers vous</p>';
+                echo 'Redirection en cours';
+                echo '<meta http-equiv="refresh" content="1 ; url=http://localhost/projectMaster/missionCreated.php">';
+
+                // header('refresh:5, url=missionCreated.php');
             }else if($result) {
                 echo '<p class="">Merci de remplir le formulaire</p>';
             }
@@ -84,7 +90,6 @@ session_start();
                     echo '<p class="rouge">Something went wrong</p>';
                 }
 
-                
                 mysqli_free_result($result);
                 mysqli_close($link);
     ?>

@@ -29,6 +29,17 @@
         <li class="nav-item">
           <a class="nav-link" href="prix.php">Tarifs</a>
         </li>
+        <?php
+        if (isset($_SESSION["loggedin"])){
+          echo '<li class="nav-item">
+          <a class="nav-link" href="promeneurcard.php">Promeneurs</a>
+          </li>'; 
+          echo '<li class="nav-item"><a class="nav-link" href="owner.php">Missions</a>
+          </li>';
+          echo '<li class="nav-item"><a class="nav-link" href="createMission.php">Dépot d\'annonce</a>
+          </li>'; 
+        }
+        ?>
         <li class="nav-item">
           <a class="nav-link" href="https://medium.com/search?q=dog%20walking" target="_blank">Blog</a>
         </li>
