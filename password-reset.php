@@ -1,24 +1,24 @@
 <?php
-// Initialize the session
+// Initialisation de la session
 session_start();
 
-// Check if the user is logged in, if not then redirect to login page
+// Redirect vers home page si pas de session
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
 
-// Include config file
+// Configuration de la connection BDD
 require_once "config.php";
 
-// Define variables and initialize with empty values
+// Création de variables sécurisées
 $new_password = $confirm_password = "";
 $new_password_err = $confirm_password_err = "";
 
-// Processing form data when form is submitted
+// Début du code
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    // Validate new password
+    // Validation du nouveau mot de passe
     if(empty(trim($_POST["new_password"]))){
         $new_password_err = "Please enter the new password.";
     } elseif(strlen(trim($_POST["new_password"])) < 6){
@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $new_password = trim($_POST["new_password"]);
     }
 
-    // Validate confirm password
+    // Validation de la confirmation du nouveau mot de passe
     if(empty(trim($_POST["confirm_password"]))){
         $confirm_password_err = "Please confirm the password.";
     } else{
@@ -37,22 +37,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         }
     }
 
-    // Check input errors before updating the database
+    // On s'assure qu'il n'y a pas d'erreures 
     if(empty($new_password_err) && empty($confirm_password_err)){
-        // Prepare an update statement
+        // On prépare la querie SQL pour remplacer le mot de passe dans la base de donnee
         $sql = "UPDATE users SET password = ? WHERE id = ?";
 
         if($stmt = mysqli_prepare($link, $sql)){
-            // Bind variables to the prepared statement as parameters
+            // On attribue les valeurs a la querie préparée
             mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
 
-            // Set parameters
+            // On chiffre le mot de passe 
             $param_password = password_hash($new_password, PASSWORD_DEFAULT);
             $param_id = $_SESSION["id"];
 
-            // Attempt to execute the prepared statement
+            // On execute $stmt. Si ca marche on redirige vers login, sinon on affiche une erreure
             if(mysqli_stmt_execute($stmt)){
-                // Password updated successfully. Destroy the session, and redirect to login page
+                // Ca a fonctionné
                 session_destroy();
                 header("location: login.php");
                 exit();
@@ -61,11 +61,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             }
         }
 
-        // Close statement
+        // On ferme $stmt
         mysqli_stmt_close($stmt);
     }
 
-    // Close connection
+    // On kill la connection BDD
     mysqli_close($link);
 }
 ?>

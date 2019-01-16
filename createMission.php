@@ -1,8 +1,8 @@
 <?php
-// Initialize the session
+// On lance la session
 session_start();
 
-// Check if the user is logged in, if not then redirect to login page
+// Si pas de session, on redirige vers la page de connexion (car on part du principe que c'est un utilisateur non authentifié et pas un simple visiteur.)
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
@@ -12,7 +12,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+  <!-- Meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
@@ -86,8 +86,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             if(isset($_POST['submit'])){
                 echo 'Redirection en cours';
                 echo '<meta http-equiv="refresh" content="1 ; url=missionCreated.php">';
-
-                // header('refresh:5, url=missionCreated.php');
             }else if($result) {
                 echo '<p class="">Merci de remplir le formulaire</p>';
             }

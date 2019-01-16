@@ -1,8 +1,8 @@
 <?php
-// Initialize the session
+// Initialisation de la session
 session_start();
 
-// Check if the user is logged in, if not then redirect to login page
+// Si pas de session, redirect vers login
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
@@ -37,9 +37,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
    <section id="team" class="pb-5">
     <div class="container">
-    <h5 class="section-title h1">DOGSITTERS A VOTRE SERVICE !</h5>
+    <h5 class="section-title h1">Ces missions vous attendent :</h5>
         <div class="row">
-            <!-- Team member -->
+            <!-- Propriétaires de chiens et leurs missions -->
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
@@ -115,8 +115,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
+
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
@@ -188,8 +187,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
+
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
@@ -261,8 +259,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
+
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
@@ -334,8 +331,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
+
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
@@ -407,8 +403,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
+
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
@@ -480,8 +475,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     </div>
                 </div>
             </div>
-            <!-- ./Team member -->
-
         </div>
     </div>
 </section>
@@ -489,7 +482,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <?php
     require "footer.php";
    ?>
-<!-- Team -->
+
     
 </body>
 </html>
