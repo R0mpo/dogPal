@@ -37,7 +37,7 @@ session_start();
   </div>
 
   <!-- Trois blocs horizontaux avec trois arguments de vente -->
-  <div class="container" id="argumentVente">
+  <div class="container mt-4 mb-4" id="argumentVente">
     <div class="row centered mt-3 mb-3">
       <div class="col-md-4 wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
         <div class="thumbnail"><img src="medias/dog.png" alt="Thumbnail Image 1">
@@ -91,8 +91,8 @@ session_start();
   </div>
 
   <!-- Partie avec les commentaires des utilisateurs -->
-  <div class="container-fluid mt-3 mb-3" id="containerBlanc">
-    <div class="container lowLight mt-3 mb-3" id="avis">
+  <div class="container-fluid mt-4 mb-4" id="containerBlanc">
+    <div class="container lowLight" id="avis">
       <div class="row">
         <div class="col-md-12">
           <h2 id="testiTitle">Ce que nos <b>clients</b> en disent :</h2>
@@ -165,7 +165,7 @@ session_start();
                       <div class="media-body">
                         <div class="testimonial">
                           <p>J'adore dogpal. Merci pour toutes ces journées de bonheur passées à promener des chiens adorables. Je retravaillerai pour vous.</p>
-                          <p class="overview"><b>Mary Saveley</b>, mâitresse de Mickel</p>
+                          <p class="overview"><b>Mary Saveley</b>, maîtresse de Mickel</p>
                         </div>
                       </div>
                     </div>
