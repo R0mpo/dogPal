@@ -1,5 +1,5 @@
 <?php
-// Initialize the session
+// On lance la session
 session_start();
 ?>
 
@@ -7,7 +7,7 @@ session_start();
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
+  <!-- Meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />

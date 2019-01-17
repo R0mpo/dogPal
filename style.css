@@ -390,3 +390,241 @@ section .section-title {
   height: 120px;
   border-radius: 50%;
 }
+
+/* Le code ci-apres s'applique sur la partie Cartes de Owners */
+#team {
+  background: #eee !important;
+}
+
+section {
+  padding: 60px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#team .card {
+  border: none;
+  background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.mainflip {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.frontside {
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.backside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+  box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 1s;
+  -o-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -ms-transform-style: preserve-3d;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+  min-height: 312px;
+}
+
+.backside .card a {
+  font-size: 18px;
+  color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+  color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+/* Style de la page register.php */
+.boddy {
+  background-color: rgb(195, 204, 204);
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans serif;
+  font-size: 16px;
+  color: #444;
+}
+
+.liul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.conthaineur {
+  max-width: 400px;
+  padding: 0px;
+  background: #fefefe;
+  margin: 15px auto;
+  border: 1px solid #c4cddb;
+  border-top-color: #d3dbde;
+  border-bottom-color: #bfc9dc;
+  box-shadow: 0 1px 1px #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+
+.ashun {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 24px;
+  text-align: center;
+  background: #eff4f7;
+  border-bottom: 1px solid #dde0e7;
+  box-shadow: 0 -1px 0 #fff inset;
+  border-radius: 5px 5px 0 0;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+form.liul {
+  margin: 10px 20px;
+
+}
+
+form.liul:last-child {
+  text-align: center;
+  margin: 20px 0 25px 0;
+}
+
+.inphut {
+  padding: 10px 10px;
+  border: 1px solid #d5d9da;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #e8e9eb inset;
+  width: 328px;
+  font-size: 1em;
+  outline: 0;
+}
+
+.inphut:focus {
+  border: 1px solid #b9d4e9;
+  border-top-color: #b6d5ea;
+  border-bottom-color: #b8d4ea;
+  box-shadow: 0 0 5px #b9d4e9;
+}
+
+#conthaineur span {
+  background: #f6f6f6;
+  padding: 3px 5px;
+  display: block;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#pswd_info {
+  position: absolute;
+  bottom: -75px;
+  bottom: -115px\9;
+  right: 75px;
+  width: 250px;
+  padding: 15px;
+  background: #fefefe;
+  font-size: .875em;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px #ccc;
+  border: 1px solid #ddd;
+}
+
+#pswd_info h4 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+#pswd_info::before {
+  content: "\25B2";
+  position: absolute;
+  top: -12px;
+  left: 45%;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ddd;
+  text-shadow: none;
+  display: block;
+}
+
+.invalid {
+  background: url(medias/cancel.png) no-repeat 0 50%;
+  padding-left: 22px;
+  line-height: 24px;
+  color: #ec3f41;
+}
+
+.valid {
+  background: url(medias/valid.png) no-repeat 0 50%;
+  padding-left: 22px;
+  line-height: 27px;
+  color: #3a7d34;
+}
+
+#pswd_info {
+  display: none;
+}
