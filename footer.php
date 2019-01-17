@@ -9,15 +9,15 @@
   <footer>
     <div class="container centered mt-3">
       <div class="row mt-4" id="piedPage">
-        <div class="col-md-6 id="piedPageGauche">
+        <div class="col-md-6" id="piedPageGauche">
           <div class="row mt-4 mb-4">
                 <?php
                   if (isset($_SESSION["loggedin"])){
 
                     echo '<div class="col-6 mb-4">';
                     echo '<ul class="nav navbar-nav">';
-                    echo '<li><a href="index.html">Acceuil</a></li>';
-                    echo '<li><a href="prix.html">Tarifs</a></li>';
+                    echo '<li><a href="index.php">Acceuil</a></li>';
+                    echo '<li><a href="prix.php">Tarifs</a></li>';
                     echo '<li><a href="https://medium.com/search?q=dog%20walking target="_blank">Blog</a></li></ul></div>';
 
                     echo '<div class="col-6">';
@@ -29,8 +29,8 @@
                   }else{
                     echo '<div class="col-md-6 text-center">';
                     echo '<ul class="nav navbar-nav">';
-                    echo '<li><a href="index.html">Acceuil</a></li>';
-                    echo '<li><a href="prix.html">Tarifs</a></li>';
+                    echo '<li><a href="index.php">Acceuil</a></li>';
+                    echo '<li><a href="prix.php">Tarifs</a></li>';
                     echo '<li><a href="https://medium.com/search?q=dog%20walking target="_blank">Blog</a></li></ul></div>';
                   }
                 ?>
