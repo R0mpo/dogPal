@@ -85,7 +85,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
             if(isset($_POST['submit'])){
                 echo 'Redirection en cours';
-                echo '<meta http-equiv="refresh" content="1 ; url=missionCreated.php">';
+                if($type="promeneur"){
+                    echo '<meta http-equiv="refresh" content="1 ; url=owner.php">';
+                }else{
+                    echo '<meta http-equiv="refresh" content="1 ; url=missionCreated.php">';
+                }
             }else if($result) {
                 echo '<p class="">Merci de remplir le formulaire</p>';
             }

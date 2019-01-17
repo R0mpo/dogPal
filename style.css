@@ -580,6 +580,12 @@ form.liul:last-child {
 }
 
 #pswd_info {
+  background: #fefefe;
+  font-size: .875em;
+  line-height: 1,3em;
+}
+
+/* #pswd_info {
   position: absolute;
   bottom: -75px;
   bottom: -115px\9;
@@ -591,7 +597,7 @@ form.liul:last-child {
   border-radius: 5px;
   box-shadow: 0 1px 3px #ccc;
   border: 1px solid #ddd;
-}
+} */
 
 #pswd_info h4 {
   margin: 0 0 10px 0;
@@ -613,6 +619,7 @@ form.liul:last-child {
 
 .invalid {
   background: url(medias/cancel.png) no-repeat 0 50%;
+  background-size: 4%;
   padding-left: 22px;
   line-height: 24px;
   color: #ec3f41;
@@ -620,6 +627,7 @@ form.liul:last-child {
 
 .valid {
   background: url(medias/valid.png) no-repeat 0 50%;
+  background-size: 4%;
   padding-left: 22px;
   line-height: 27px;
   color: #3a7d34;

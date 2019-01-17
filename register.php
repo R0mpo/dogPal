@@ -78,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // On execute $stmt
             if(mysqli_stmt_execute($stmt)){
                 // On renvoie vers la page connected.php
-                header("location: connected.php");
+                echo '<meta http-equiv="refresh" content="1 ; url=login.php">';
             } else{
                 echo "Something went wrong. Please try again later.";
             }
@@ -132,7 +132,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </form>
         
         <div id="pswd_info">
-                    <h4>Nous recommendons un mot de passe respectant les conditions suivantes :</h4>
+                    <p class="centered">Nous recommendons un mot de passe respectant les conditions suivantes :</p>
                     <ul>
                         <li id="letter" class="invalid liul">Au moins <strong>une lettre</strong></li>
                         <li id="capital" class="invalid liul">Au moins  <strong>une lettre majuscule</strong></li>
@@ -140,9 +140,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <li id="length" class="invalid liul">Au moins  <strong>8 characters lettres</strong></li>
                     </ul>
                 </div>
-                <p class="centered">Vous avez déjà un compte ? <a href="login.php">Connectez-vous...</a>.</p>
-                </div>
-                <script type="text/javascript">
+        <p class="centered">Vous avez déjà un compte ? <a href="login.php">Connectez-vous...</a>.</p>
+        </div>
+        <script type="text/javascript">
 
     $( document ).ready( function ()
     {
