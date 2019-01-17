@@ -40,8 +40,8 @@ session_start();
   <div class="container mt-4 mb-4" id="argumentVente">
     <div class="row centered mt-3 mb-3">
       <div class="col-md-4 wow bounceInRight" data-wow-duration="1s" data-wow-delay="1s">
-        <div class="thumbnail"><img src="medias/dog.png" alt="Thumbnail Image 1">
-          <div class="caption">
+        <div class="thumbnail"><img src="medias/dog.png" class="mt-3" alt="Thumbnail Image 1">
+          <div class="caption mt-3">
             <h3>Partenaire Confiance</h3>
             <p>Confiez votre animal de compagnie aux meilleurs des promeneurs de votre ville. Tous nos premeneurs sont responsables de vos amis les animaux et nous nous engageons à vous fournir la meilleure prestation imaginable.</p>
             <p><?php if (isset($_SESSION["loggedin"])){
@@ -56,8 +56,8 @@ session_start();
         </div>
       </div>
       <div class="col-md-4 wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">
-        <div class="thumbnail"><img src="medias/bone.png" alt="Thumbnail Image 1">
-          <div class="caption">
+        <div class="thumbnail"><img src="medias/bone.png" class="mt-3" alt="Thumbnail Image 1">
+          <div class="caption mt-3">
             <h3>Equipe Professionelle</h3>
             <p>Une équipe de professionnels habitués vous garantit un service de qualité. Nos promeneurs sont des habitués du métier et cela fait longtemps que nous travaillons en partenariat avec eux.</p>
             <?php if (isset($_SESSION["loggedin"])){
@@ -72,8 +72,8 @@ session_start();
         </div>
       </div>
       <div class="col-md-4 wow bounceIn" data-wow-duration="1s" data-wow-delay="1s">
-        <div class="thumbnail"><img src="medias/pawprint.png" alt="Thumbnail Image 1">
-          <div class="caption">
+        <div class="thumbnail"><img src="medias/pawprint.png" class="mt-3" alt="Thumbnail Image 1">
+          <div class="caption mt-3">
             <h3>Assurance Bonheur</h3>
             <p>Retrouvez votre chien plus heureux que jamais. Il vous retrouvera souriant, après avoir pu dépenser toute son énergie en compagnie d'autres chiens de sa taille. Dogpal est votre partenaire promenades.</p>
             <?php if (isset($_SESSION["loggedin"])){
@@ -98,10 +98,10 @@ session_start();
           <h2 id="testiTitle">Ce que nos <b>clients</b> en disent :</h2>
           <div id="myCarousel avis" class="carousel slide" data-ride="carousel">
             <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>
+            </ol> -->
             <!-- Wrapper -->
             <div class="carousel-inner">
               <div class="item carousel-item active">

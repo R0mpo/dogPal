@@ -40,11 +40,12 @@ html, body {
   height: auto;
   font: Lato;
   text-align: left;
-  /* padding-left: 50px; */
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-#piedPageGauche{
-  padding: 100px;
+#piedPageGauche {
+  margin-top: 40px;
 }
 
 .wrapper {
@@ -208,10 +209,9 @@ h2::after {
     font: Lato;
   }
 
-  #piedPageGauche{
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+#piedPageGauche {
+  margin-top: -25px;
+}
 
   .my-carousel {
     position: relative;
@@ -454,7 +454,7 @@ section .section-title {
 }
 
 .backside {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   background: white;

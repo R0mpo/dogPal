@@ -23,15 +23,16 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </head>
 
 <body> 
-   <?php
-    require "header.php";
-    require_once "config.php";
-    $sql = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1";
-    $sql1 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 1";
-    $sql2 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 2";
-    $sql3 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 3";
-    $sql4 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 4";
-    $sql5 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 5";
+
+    <?php
+        require "header.php";  
+        require_once "config.php";
+        $sql = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1";
+        $sql1 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 1";
+        $sql2 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 2";
+        $sql3 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 3";
+        $sql4 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 4";
+        $sql5 = "SELECT * FROM mission WHERE type = 'besoinPromeneur' ORDER BY created_at DESC LIMIT 1 OFFSET 5";
     ?>
 
 
