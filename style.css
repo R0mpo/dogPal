@@ -48,6 +48,10 @@ html, body {
   margin-top: 40px;
 }
 
+.enLigne {
+  display: inline-block;
+}
+
 .wrapper {
   position: relative;
   width: 100%;
@@ -209,9 +213,9 @@ h2::after {
     font: Lato;
   }
 
-#piedPageGauche {
-  margin-top: -25px;
-}
+  #piedPageGauche {
+    margin-top: -25px;
+  } 
 
   .my-carousel {
     position: relative;
@@ -249,6 +253,12 @@ h2::after {
 
   .vanish{
     display: none;
+  }
+
+  .maxiCard {
+    max-width: 305px;
+    min-width: auto;
+    text-overflow: ellipsis;
   }
 }
 
@@ -454,7 +464,7 @@ section .section-title {
 }
 
 .backside {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   left: 0;
   background: white;
@@ -505,6 +515,16 @@ section .section-title {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+}
+
+.maxiCard{
+  min-width: 350px;
+  max-width: 430px;
+  text-overflow: ellipsis;
+}
+
+.centPour{
+  width: 100%;
 }
 
 /* Style de la page register.php */
