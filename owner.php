@@ -37,17 +37,17 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 
    <section id="team" class="pb-5">
-    <div class="container">
+    <div class="container-fluid noPad">
     <h5 class="section-title h1">Ces missions vous attendent :</h5>
         <div class="row">
             <!-- Propriétaires de chiens et leurs missions -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4 centPour">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
                     <div class="mainflip">
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class="img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                    <p><img class="img-fluid" src="medias/chien_1.jpg" alt="card image"></p>
                                     <h4 class="card-title">
                                     <?php 
                                         $result = mysqli_query($link, $sql);
@@ -76,7 +76,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                             </div>
                         </div>
                         <div class="backside">
-                            <div class="card">
+                            <div class="card maxiCard">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
@@ -123,7 +123,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
+                                    <p><img class=" img-fluid" src="medias/chien_2.jpg" alt="card image"></p>
                                     <h4 class="card-title"><?php 
                                         $result = mysqli_query($link, $sql1);
                                         if (mysqli_num_rows($result) > 0) {
@@ -149,7 +149,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql1);
@@ -195,7 +195,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
+                                    <p><img class=" img-fluid" src="medias/chien_3.jpg" alt="card image"></p>
                                     <h4 class="card-title"><?php 
                                         $result = mysqli_query($link, $sql2);
                                         if (mysqli_num_rows($result) > 0) {
@@ -221,7 +221,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql2);
@@ -267,7 +267,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg" alt="card image"></p>
+                                    <p><img class=" img-fluid" src="medias/chien_4.jpg" alt="card image"></p>
                                     <h4 class="card-title"><?php 
                                         $result = mysqli_query($link, $sql3);
                                         if (mysqli_num_rows($result) > 0) {
@@ -293,7 +293,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql3);
@@ -339,7 +339,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png" alt="card image"></p>
+                                    <p><img class=" img-fluid" src="medias/chien_5.png" alt="card image"></p>
                                     <h4 class="card-title"><?php 
                                         $result = mysqli_query($link, $sql4);
                                         if (mysqli_num_rows($result) > 0) {
@@ -365,7 +365,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql4);
@@ -411,7 +411,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         <div class="frontside">
                             <div class="card">
                                 <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg" alt="card image"></p>
+                                    <p><img class=" img-fluid" src="medias/chien_6.jpg" alt="card image"></p>
                                     <h4 class="card-title"><?php 
                                         $result = mysqli_query($link, $sql5);
                                         if (mysqli_num_rows($result) > 0) {
@@ -437,7 +437,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql5);

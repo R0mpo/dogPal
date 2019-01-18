@@ -76,7 +76,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql);
@@ -147,7 +147,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql1);
@@ -218,7 +218,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql2);
@@ -289,7 +289,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql3);
@@ -360,7 +360,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql4);
@@ -431,7 +431,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="backside">
                             <div class="card">
-                                <div class="card-body text-center mt-4">
+                                <div class="card-body text-center mt-4 maxiCard">
                                     <h4 class="card-title">Qui suis-je ?</h4>
                                     <p class="card-text"><?php 
                                         $result = mysqli_query($link, $sql5);
